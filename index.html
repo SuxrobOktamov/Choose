@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            box-sizing: border-box;
+            background-color: #8c1db2;
+            margin: 150px auto;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-column-gap: 25px;
+            width: 80%;
+            background-color: white;
+            margin: auto;
+            padding: 30px 40px 50px 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px -2px #302525;
+            
+        }
+        .tab {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 15px;
+        }
+        button{
+            border: none;
+            font-weight: bold;
+            font-size: 17px;
+            background-color: #d8d8d894;
+            padding: 7px;
+        }
+        ol{
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            
+        }
+        ol li {
+            position: relative;
+            color: grey;
+        }
+        li span  {
+
+            position: absolute;
+            left: -23px;
+            padding: 0px 5px;
+            border-radius: 50%;
+            color: #363636;
+            background-color: #e3e3e3;
+        }
+        .opcity{
+            opacity: 1;
+        }
+        ol li:hover {
+            color: #363636;
+        }
+        #back, #submit, #no, #yes {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item">
+            <ol class="item">
+                <li id="title" > <span id="span1" >1</span> Choose title</li>
+                <li id="describ" > <span id="span2">2</span>Choose desciribtion</li>
+                <li id="data" > <span id="span3">3</span>Confirm data</li>
+            </ol>
+        </div>
+        <div class="tab">
+            <h2></h2>
+            <div>
+                <button class="button" id="back">Back</button>
+                <button class="button" id="submit">Submit title</button>
+                <button class="button" id="no">No, go back </button>
+                <button class="button" id="yes">Yes, go ahead</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
